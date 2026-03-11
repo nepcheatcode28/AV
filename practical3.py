@@ -1,3 +1,4 @@
+- KMeans
 import numpy as np
 from sklearn.cluster import KMeans 
 import matplotlib.pyplot as plt 
@@ -8,7 +9,7 @@ kmeans.fit(x)
 labels=kmeans.labels_
 print(labels)
 plt.scatter(x[:,0],x[:,1],c=labels,cmap='rainbow') 
-plt.scatter(kmeans.cluster_centers_[:,0],kmeans.cluster_centers_[:1],color='blue',marker='X',s=200,label='centroid') 
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], color='blue', marker='X', s=200, label='centroid')
 plt.xlabel("Annual income")
 plt.ylabel("spending score") 
 plt.legend() 
