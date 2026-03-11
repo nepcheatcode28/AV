@@ -1,6 +1,6 @@
 #read and display the image
 import cv2
-image = cv2.imread(r"C:\Users\user\OneDrive\Dokumen\Desktop\AICV\practicals\drama.png")
+image = cv2.imread(r"img.jpg")
 #display img
 cv2.imshow("first",image)
 gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
