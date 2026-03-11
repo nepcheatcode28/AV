@@ -1,5 +1,4 @@
-
-import numpy as np
+import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import tree
 import matplotlib.pyplot as plt
@@ -13,8 +12,6 @@ model.fit(x,y)
 prediction = model.predict([[40,2]])
 print("Prediction:", prediction)
 #data visualization
-plt.figure(figsize= (10,6))
+plt.figure(figsize= (5,5.5))
 tree.plot_tree(model, feature_names=["Age:", "Income:"], class_names=["No", "Yes"], filled=True)
 plt.show()
-
-
